@@ -1,0 +1,11 @@
+{
+  "rewrites": [
+    { "source": "/((?!api/|manifest\\.json$|favicon\\.png$|icon\\.png$|apple-touch-icon\\.png$).*)", "destination": "/" }
+  ],
+  "crons": [
+    {
+      "path": "/api/scoring/cron",
+      "schedule": "0 8 * * 1,2,3,4,5"
+    }
+  ]
+}
